@@ -16,16 +16,17 @@ const UUID = process.env.UUID || 'aca4e9de-9705-428c-a8f2-3c34938dc62c';  // 在
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';     // 哪吒面板地址,v1形式：nz.serv00.net:8008  v0形式：nz.serv00.net
 const NEZHA_PORT = process.env.NEZHA_PORT || '';         // v1哪吒请留空，v0 agent端口，当端口为{443,8443,2087,2083,2053,2096}时，自动开启tls
 const NEZHA_KEY = process.env.NEZHA_KEY || '';           // v1的NZ_CLIENT_SECRET或v0 agwnt密钥 
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';       // argo固定隧道域名,留空即使用临时隧道
-const ARGO_AUTH = process.env.ARGO_AUTH || '';           // argo固定隧道token或json,留空即使用临时隧道
-const ARGO_PORT = process.env.ARGO_PORT || 8001;         // argo固定隧道端口,使用token需在cloudflare控制台设置和这里一致，否则节点不通
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'orzech.531957.xyz
+';       // argo固定隧道域名,留空即使用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiMzdhNDU0OTVmMGQ1ZDA4Y2Q5MDgyOWUwMzdhMmZmNjYiLCJ0IjoiY2I4OWYwNjQtNjI5Ny00MjFlLTg2ZjItMjk5NzBmOWYxZmY0IiwicyI6IlpqY3laamczWkdRdE9HTmpNQzAwTkRKaUxUZzRNV010WmpZeFpqa3pZems1WlRReCJ9';           // argo固定隧道token或json,留空即使用临时隧道
+const ARGO_PORT = process.env.ARGO_PORT || 8051;         // argo固定隧道端口,使用token需在cloudflare控制台设置和这里一致，否则节点不通
 const TUIC_PORT = process.env.TUIC_PORT || 40000;        // tuic端口，支持多端口的可以填写，否则保持默认不动
 const HY2_PORT = process.env.HY2_PORT || 50000;          // hy2端口，支持多端口的可以填写，否则保持默认不动
-const REALITY_PORT = process.env.REALITY_PORT || 60000;  // reality端口，支持多端口的可以填写，否则保持默认不动
+const REALITY_PORT = process.env.REALITY_PORT || 39755;  // reality端口，支持多端口的可以填写，否则保持默认不动
 const CFIP = process.env.CFIP || 'www.visa.com.tw';      // 优选域名或优选IP
 const CFPORT = process.env.CFPORT || 443;                // 优选域名或优选IP对应端口
 const PORT = process.env.PORT || 3000;                   // http订阅端口    
-const NAME = process.env.NAME || 'Vls';                  // 节点名称
+const NAME = process.env.NAME || 'Vlsuus';                  // 节点名称
 const CHAT_ID = process.env.CHAT_ID || '';               // Telegram chat_id  两个变量不全不推送节点到TG 
 const BOT_TOKEN = process.env.BOT_TOKEN || '';           // Telegram bot_token
 
